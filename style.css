@@ -113,23 +113,7 @@
     margin-top: 1%;
     margin-left: 2%;
 }
-.rdmore{
-    height: 2.5rem;
-    width: 12.5%;
-    position: absolute;
-    top: 14em;
-    font-size: 1.2rem;
-    background-color: transparent;
-    color: white;
-    font-weight: 500;
-    margin-left: 20%;
-    border: 2px solid white;
-    border-radius: 5px;
-}
-.rdmore:hover{
-    background-color: white;
-    color: black;
-}
+
 .registration{
     height: 12%;
     width: 100%;
@@ -190,7 +174,7 @@
     height: 18em;
     width: 88%;
     position: relative;
-    top: 23em;
+    top: 16em;
     margin: auto;
 }
 .whyads h2{
@@ -216,7 +200,7 @@
     height: 20em;
     width: 90%;
     position: relative;
-    top: 26.5em;
+    top: 19.5em;
     display: flex;
     margin: auto;
     justify-content: space-around;
@@ -240,7 +224,7 @@
     height: 35em;
     width: 87%;
     position: relative;
-    top: 32em;
+    top: 25em;
     margin: auto;
     text-align: center;
 }
@@ -290,7 +274,7 @@
     height: 170em;
     width: 90%;
     position: relative;
-    top: 42em;
+    top: 35em;
     text-align: center;
    
 }
@@ -330,7 +314,7 @@
     height: 35em;
     width: 90%;
     position: relative;
-    top: 51em;
+    top: 45em;
     margin-left: 6%;
     text-align: center;
 }
@@ -338,7 +322,7 @@
     height: 85em;
     width: 100%;
     position: relative;
-    top: 58em;
+    top: 47em;
     background-color: #ECEEF1;
     text-align: center;
 }
@@ -408,7 +392,7 @@
     height: 20em;
     width: 100%;
     position: relative;
-    top: 60em;
+    top: 50em;
     /* background-color: aqua; */
 }
 .cntdetails{
@@ -478,11 +462,24 @@
     .container{
         width: fit-content;
     }
+    .registerform{
+        height: 3rem;
+        width: 13rem;
+        position: fixed;
+        top: 32em;
+        background-color: rgba(255, 0, 0, 0.65);
+        z-index: 2;
+        left: 82%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .advantage{
         height: 10em;
         width: 90%;
         position: relative;
-        top: 60em;
+        top: 62em;
         margin-left: 6%;
         text-align: center;
         margin-top: 1.2rem;
@@ -491,7 +488,7 @@
         height: 80em;
         width: 100%;
         position: relative;
-        top: 79em;
+        top: 85em;
         background-color: #ECEEF1;
         text-align: center;
     }
@@ -505,10 +502,10 @@
         justify-content: center;
     }
     .tcard:nth-child(2){
-        height: 70%;
+        height: 68%;
     }
     .tcard:nth-child(3){
-        height: 74%;
+        height: 71%;
     }
     .datacard img{
         height: 1.3rem;
