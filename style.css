@@ -502,10 +502,10 @@
         justify-content: center;
     }
     .tcard:nth-child(2){
-        height: 68%;
+        height: 69%;
     }
     .tcard:nth-child(3){
-        height: 69%;
+        height: 68%;
     }
     .datacard img{
         height: 1.3rem;
