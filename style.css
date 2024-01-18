@@ -505,7 +505,7 @@
         height: 68%;
     }
     .tcard:nth-child(3){
-        height: 71%;
+        height: 69%;
     }
     .datacard img{
         height: 1.3rem;
@@ -525,7 +525,7 @@
         justify-content: space-around;
     }
     .datacard{
-        height: 78%;
+        height: 70%;
         width: 93%;
         position: absolute;
         top: 4.5em;
