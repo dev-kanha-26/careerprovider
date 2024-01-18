@@ -525,7 +525,7 @@
         justify-content: space-around;
     }
     .datacard{
-        height: 70%;
+        height: 75%;
         width: 93%;
         position: absolute;
         top: 4.5em;
@@ -536,7 +536,7 @@
         margin-top: 2% !important;
     }
     #datacard1{
-        height: 70%;
+        height: 78%;
     }
     .verify{
         height: 30%;
