@@ -1,49 +1,49 @@
-*{
+* {
     margin: 0;
-    /* font-family: ; */
-    border: border-box;
-    font-family: 'Libre Baskerville', serif;
-    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif, 'Poppins', sans-serif; /* Combine font-family declarations */
 }
-.container{
-    width: 100%;
 
-}
-.header{
+/* Header */
+.header {
     width: 100%;
     height: 3rem;
     background-color: #00375d;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     position: fixed;
     z-index: 2;
 }
-.season{
+
+/* Season */
+.season {
     height: 58%;
     width: 388px;
     background-color: #f77a0c;
     text-align: center;
-    font-weight: bolder;
+    font-weight: bold;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 9px;
-    /* margin-left: 20%; */
     cursor: pointer;
-    animation: seasonsAnim 3s linear 0.1s infinite normal;
+    animation: seasonsAnim 3s linear infinite; /* Simplified animation syntax */
 }
-.season :hover{
-    color:#00375d;
+
+.season:hover { /* Corrected hover effect syntax */
+    color: #00375d;
 }
-@keyframes seasonsAnim{
-    50%{
+
+@keyframes seasonsAnim {
+    50% {
         box-shadow: 4px 4px 20px orange;
     }
 }
-.socialMedia{
+
+/* Social Media Icons */
+.socialMedia {
     height: 58%;
     width: 150px;
     color: white;
@@ -51,12 +51,10 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* margin-left: %; */
-    /* padding-left: 20%; */
-    
 }
 
-.menubar{
+/* Menu Bar */
+.menubar {
     height: 6em;
     width: 100%;
     background-color: #ffc93c;
@@ -67,54 +65,9 @@
     top: 3rem;
     z-index: 2;
 }
-.admlogo{
-    width: 23%;
-    padding-left: 50px;
-}
-.management{
-    display: flex;
-}
-.management select{
-    border: none;
-    color: orange;
-    background-color: transparent;
-    width: 1.2rem;
-}
-.management select option{
-    color: white;
-    background-color: black;
-}
-.home:active{
-    text-decoration: orange underline;
-}
-.search{
-    font-size: larger;
-}
 
-.form{
-    height: 35em;
-    background-image: url("./pics/univ3.jpg");
-    /* opacity: 0.7; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    top: 9em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* align-items: center; */
-    /* text-align: center; */
-    /* margin-left: 2%; */
-}
-.form p{
-    color: white;
-    font-weight: bold;
-    font-size: 4em;
-    margin-top: 1%;
-    margin-left: 2%;
-}
-
-.registration{
+/* Registration Section */
+.registration {
     height: 12%;
     width: 100%;
     background-color: white;
@@ -124,35 +77,36 @@
     font-size: 1.5rem;
     position: absolute;
     top: 17em;
-    /* transition: margin-top 0.1s ease-in-out 0.02s; */
 }
-.registration a{
-    animation: register 2s linear 0.02s infinite normal;
+
+.registration a {
+    animation: register 2s linear infinite; /* Simplified animation syntax */
     text-decoration: none;
 }
-@keyframes register{
-    0%{
-        color: red;
-    }
-    /* 25%{
-        color: chartreuse;
-    } */
-    50%{
-        color: blue;
-    }
-    100%{
-        color: yellow;
-    }
+
+/* Form Section */
+.form {
+    height: 35em;
+    background-image: url("./pics/univ3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 9em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-/* .enqform{
-    height: 26em;
-    width: 68%;
-    background-color: white;
-    position: absolute;
-    top: 20em;
-    box-shadow: 2px 2px 15px rgb(126, 125, 125);
-} */
-.registerform{
+
+.form p {
+    color: white;
+    font-weight: bold;
+    font-size: 4em;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+/* Register Form */
+.registerform {
     height: 3rem;
     width: 13rem;
     position: fixed;
@@ -165,28 +119,35 @@
     align-items: center;
     text-align: center;
 }
-.registerform a{
+
+.registerform a {
     color: white;
     font-size: larger;
     text-decoration: none;
 }
-.whyads{
+
+/* Why Ads Section */
+.whyads {
     height: 18em;
     width: 88%;
     position: relative;
     top: 16em;
     margin: auto;
+    text-align: center;
 }
-.whyads h2{
+
+.whyads h2 {
     font-size: 2.5rem;
     font-weight: 900;
 }
-.whyads p{
+
+.whyads p {
     font-size: 1rem;
     color: rgb(121, 117, 117);
     font-weight: 540;
 }
-.whyads button{
+
+.whyads button {
     height: 2.4em;
     width: 18.5%;
     background-color: #00375d;
@@ -196,7 +157,9 @@
     border-radius: 5px;
     border-color: transparent;
 }
-.cards{
+
+/* Cards Section */
+.cards {
     height: 20em;
     width: 90%;
     position: relative;
@@ -205,634 +168,30 @@
     margin: auto;
     justify-content: space-around;
 }
-.cd{
+
+.cd {
     height: 81%;
     width: 17%;
-    background-color: #E1E6EA;
+    background-color: #e1e6ea;
     border: 1px solid transparent;
     padding-top: 2%;
     padding-left: 1.2%;
     border-radius: 4%;
 }
-.cd h4{
+
+.cd h4 {
     margin-bottom: 7%;
 }
-.cd p{
+
+.cd p {
     margin-top: 2%;
 }
-.dprogram{
-    height: 35em;
-    width: 87%;
-    position: relative;
-    top: 25em;
-    margin: auto;
-    text-align: center;
-}
-.dprogram>p{
-    font-size: large;
-    color: rgb(121, 117, 117);
-}
-.dpcards{
-    height: 80%;
-    width: 100%;
-    background-color: transparent;
-    margin-top: 6.5%;
-    display: flex;
-    justify-content: space-between;
-}
-.dp{
-    height: 86%;
-    width: 48.3%;
-    border: 1px solid transparent;
-    border-radius: 2.3%;
-}
-.sdp{
-    background-image: url("./pics/sdp.png");
-    background-size: cover;
-    color: white;
-    text-align: center;
-    
-}
-.sdp p{
-    margin-top: 2.8%;
-    width: 70%;
-    margin-left: 19%;
-    line-height: 1.5rem;
-}
-.fdp{
-    background-image: url("./pics/fdp.png");
-    background-size: cover;
-    color: white;
-}
-.fdp p{
-    margin-top: 2.8%;
-    width: 69%;
-    margin-left: 19%;
-    line-height: 1.5rem;
-}
-.institute{
-    height: 170em;
-    width: 90%;
-    position: relative;
-    top: 35em;
-    text-align: center;
-   
-}
-.instcards{
-    height: 80%;
-    width: 95%;
-    margin-left: 8%;
-    margin-top: 3.5%;
-    /* background-color: aqua; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(9, 1fr);
-    column-gap: 20px;
-    row-gap: 25px;
-    justify-content: space-between;
-}
-.clg{
-    height: 90%;
-    width: 100%;
-    /* border: 1px solid black; */
-    text-align: left;
-    font-size: 1.08rem;
-    line-height: 1.5rem;
-}
-.clg img{
-    height: 70%;
-    width: 100%;
-    margin-bottom: 0.4rem;
-}
-.clg p{
-    color: rgb(121, 117, 117);
-}
-/* .manymore{
-    
-} */
-.advantage{
-    height: 35em;
-    width: 90%;
-    position: relative;
-    top: 45em;
-    margin-left: 6%;
-    text-align: center;
-}
-.testimonial{
-    height: 85em;
-    width: 100%;
-    position: relative;
-    top: 47em;
-    background-color: #ECEEF1;
-    text-align: center;
-}
-.testcards{
-    height: 80%;
-    width: 90%;
-    /* background-color: aqua; */
-    margin-left: 6%;
-    margin-top: 6%;
-    display: flex;
-    justify-content: space-around;
-}
-.tcard{
-    height: 78%;
-    width: 30%;
-    /* border: 1px solid black; */
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-.tcard1{
-    height: 97%;
-    width: 30%;
-    /* border: 1px solid black; */
-    position: relative;
-    display: flex;
-    justify-content: center;
 
+/* Media Queries */
+@media only screen and (min-height: 600px) {
+    /* Adjustments for higher resolutions */
 }
 
-.circ{
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    border: 1px solid transparent;
-    background-color: #f77a0c;
-    z-index: 1;
-}
-.datacard{
-    height: 90%;
-    width: 93%;
-    position: absolute;
-    top: 4.5em;
-    /* border: 1px solid black; */
-    border-radius: 1.01rem;
-    /* z-index: -1; */
-    box-shadow: 1px 1px 10px black;
-}
-.datacard p{
-    margin-top: 25%;
-    width: 80%;
-    text-align: left;
-    margin-left: 15%;
-    font-size: 1.03rem;
-}
-#datacard1{
-    height: 92%;
-}
-#datacard3{
-    height: 81%;
-}
-.tcard:hover{
-    transform: scale(1.09);
-    transition-duration: 0.8s;
-}
-.footer{
-    height: 20em;
-    width: 100%;
-    position: relative;
-    top: 50em;
-    /* background-color: aqua; */
-}
-.cntdetails{
-    height: 85%;
-    background-color: #ffc93c;
-    padding: 60px 6%;
-    /* margin: 0px 40px; */
-    display: grid;
-    grid-template-columns: 2fr 1.2fr;
-}
-.cnt1 p, .cnt2 p{
-    margin-bottom: 2%;
-}
-.cnt1 a,.cnt2 a, .cnt2 p{
-    color: white;
-    text-decoration: none;  
-    font-size: 1.1rem;
-}
-.apply{
-    height: 2em;
-    width: 9em;
-    /* text-align: center; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border: 1px solid transparent;
-    border-radius: 1em;
-    background-color: #00375d;
-    margin-left: 70%;
-    margin-top: 12%;
-    animation: applyAnim 3s linear 0.1s infinite normal;
-}
-@keyframes applyAnim{
-    50%{
-        box-shadow: 5px 5px 40px #00375d;
-    }
-}
-.verify{
-    height: 25%;
-    /* width: 16%; */
-    /* background-color: aqua; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.vcontainer{
-    width: 18%;
-    display: flex;
-    justify-content: center;
-}
-.vcontainer img{
-    width: 40%;
-    /* height: 90%; */
-}
-.copyright{
-    height: 11%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-@media only screen and (min-height: 600px){
-    .container{
-        width: fit-content;
-    }
-    .registerform{
-        height: 3rem;
-        width: 13rem;
-        position: fixed;
-        top: 32em;
-        background-color: rgba(255, 0, 0, 0.65);
-        z-index: 2;
-        left: 82%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .advantage{
-        height: 10em;
-        width: 90%;
-        position: relative;
-        top: 62em;
-        margin-left: 6%;
-        text-align: center;
-        margin-top: 1.2rem;
-    }
-    .testimonial{
-        height: 80em;
-        width: 100%;
-        position: relative;
-        top: 85em;
-        background-color: #ECEEF1;
-        text-align: center;
-    }
-    .tcard{
-        height: 90%;
-        width: 90%;
-        /* border: 1px solid black; */
-        position: relative;
-        display: flex;
-        margin-left: 5%;
-        justify-content: center;
-    }
-    .tcard:nth-child(2){
-        height: 69%;
-    }
-    .tcard:nth-child(3){
-        height: 66%;
-    }
-    .datacard img{
-        height: 1.3rem;
-        width: 9%;
-    }
-    .datacard p{
-        margin-top: 17%;
-    }
-    .testcards{
-        height: 87%;
-        width: 90%;
-        /* background-color: aqua; */
-        margin-left: 6%;
-        margin-top: 6%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .datacard{
-        height: 75%;
-        width: 93%;
-        position: absolute;
-        top: 4.5em;
-        /* border: 1px solid black; */
-        border-radius: 1.01rem;
-        /* z-index: -1; */
-        box-shadow: 1px 1px 10px black;
-        margin-top: 2% !important;
-    }
-    #datacard1{
-        height: 78%;
-    }
-    .verify{
-        height: 30%;
-        /* width: 16%; */
-        /* background-color: aqua; */
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-    }
-    .footer{
-        height: 20em;
-        width: 100%;
-        position: relative;
-        top: 82em;
-    }
-}
-/* Mobile Css Styles */
-@media only screen and (max-width: 600px){
-    .container{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .admlogo:first-of-type{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .admlogo:last-of-type{
-        display: none;
-    }
-    .registration{
-        display: none !important;
-    }
-    .form{
-        width: 45em !important;
-        height: 35em;
-    }
-    .registerform {
-        height: 4rem;
-        width: 20rem;
-        bottom: 20%;
-        left: 50%;
-        z-index: 1;
-        position: absolute;
-        border-radius: 10px;
-    }
-    .whyads {
-        width: 42em;
-        padding: 0px 25px;
-        height: fit-content;
-        top: 12em;
-    }
-    .whyads h2 {
-        font-size: 4.5rem;
-    }
-    .whyads p {
-        font-size: 1.5rem;
-    }
-    .cards {
-        height: fit-content;
-        width: 37rem;
-        flex-direction: column;
-        position: relative;
-        top: 15em;
-        left: 20px;
-        display: flex;
-        margin: auto;
-        align-items: center;
-        justify-content: center;
-    }
-    .cd {
-        height: 400px;
-        width: 35rem;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #E1E6EA;
-        border: 1px solid transparent;
-        padding-top: 2%;
-        left: 5%;
-        position: relative;
-        margin-bottom: 15px;
-        padding-left: 1.2%;
-        border-radius: 4%;
-    }
-    .cd h4 {
-        font-size: 3em !important;
-        margin-bottom: 5%;
-        margin-top: 2rem;
-    }
-    .cd p {
-        font-weight: bold;
-        font-size: 2em;
-        margin-top: 0%;
-    }
-    .cd img {
-        position: relative;
-        transform: scale(2.5);
-        opacity: 0.4;
-        align-items: center;
-        justify-content: center;
-    }
-    .cd:first-of-type img {
-        top: -35% !important;
-        left: 10px !important;
-    }
-    .cd:nth-child(2) img{
-        top: -30% !important;
-        left: 0 !important;
-    }
-    .cd:nth-child(3) img{
-        top: 50% !important;
-        left: 50%!important;
-    }
-    .cd:nth-child(4) img{
-        top: -30% !important;
-        left: 0% !important;
-    }
-    .cd:last-child img {
-        top:-20% !important;
-        left: 0% !important;
-    }
-    .medical{
-        height: fit-content;
-    }
-    .dprogram {
-        height: fit-content;
-        width: 45rem;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 20em;
-        margin: auto;
-        text-align: center;
-    }
-    .dprogram>h2{
-        font-size: 4rem !important;
-    }
-    .dprogram>p{
-        font-size: xx-large;
-    }
-    .dpcards {
-        height: fit-content;
-        width: 100%;
-        background-color: transparent;
-        margin-top: 6.5%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .sdp {
-        height: 400px;
-        width: 95%;
-        background-image: url(./pics/sdp.png);
-        background-size: cover;
-        color: white;
-        border-radius: 20px;
-        text-align: center;
-        margin-bottom: 2em !important;
-    }
-    .sdp h2{
-        font-size: 2.5rem !important;
-    }
-    .sdp p{
-        font-size: 1.5em;
-        line-height: 2rem;
-    }
-    .fdp {
-        height: 400px;
-        width: 95%;
-        background-image: url(./pics/fdp.png);
-        background-size: cover;
-        color: white;
-        border-radius: 20px;
-        text-align: center;
-        margin-bottom: 2em !important;
-    }
-    .fdp h2{
-        font-size: 2.5rem !important;
-    }
-    .fdp p{
-        font-size: 1.5em;
-        line-height: 2rem;
-    }
-    .institute {
-        width: 42rem;
-        top: 20em;
-    }
-    .institute>h2 {
-        font-size: 4.5rem !important;
-    }
-    .institute>p{
-        font-size: xx-large !important;
-    }
-    .clg{
-        height: 65%;
-    }
-    .advantage {
-        height: 35em;
-        width: 42rem;
-        position: relative;
-        top: 30em;
-        margin-left: 6%;
-        text-align: center;
-    }
-    .advantage>h2{
-        font-size: 4.5rem !important;
-    }
-    .advantage>p{
-        font-size: xx-large;
-    }
-    .testimonial{
-        height: 176rem;
-        width: 45rem;
-        position: relative;
-        top: 30em;
-        background-color: #ECEEF1;
-        text-align: center;
-    }
-    .testimonial>h2{
-        font-size: 4.5rem !important;
-    }
-    .testimonial>p{
-        font-size: xx-large !important;
-    }
-    .testcards {
-        height: fit-content;
-        width: 90%;
-        margin-left: 5%;
-        margin-top: 5%;
-        align-items: center;
-        flex-direction: column;
-        display: flex;
-        justify-content: space-around;
-    }
-    .tcard{
-        height: 500px;
-        width: 100%;
-        position: relative;
-        display: flex;
-        justify-content: center;
-    }
-    .tcard:nth-child(2) {
-        top: 28em !important;
-    }
-    .tcard:last-child{
-        top: 67em !important;
-    }
-    .datacard {
-        height: fit-content !important;
-        width: 35rem;
-        position: absolute;
-        top: 4.5em;
-        border-radius: 1.01rem;
-        box-shadow: 1px 1px 10px black;
-    }
-    .datacard img{
-        height: inherit !important ;
-        width: inherit;
-    }
-    .datacard p{
-        margin-top: 20% !important;
-        width: 80% !important;
-        text-align: left !important;
-        margin-left: 10% !important;
-        font-size: 1.3rem !important;
-    }
-    .datacard h3{
-        margin-top: 2% !important;
-        text-align: left !important;
-        margin-left: 10% !important;
-    }
-    .cntdetails{
-        grid-template-columns: 1.5fr 1.5fr;
-    }
-    .apply{
-        margin-top: 19%;
-    }
-    .cnt2 p{
-        font-size: 0.94em;
-    }
-    .cnt2 a{
-        font-size: 0.9em;
-    }
-    .cnt1 img{
-        height: 30%;
-        width: 50%;
-    }
-    .footer {
-        height: 20em;
-        width: 45rem;
-        position: relative;
-        top: 30em;
-    }
+@media only screen and (max-width: 600px) {
+    /* Adjustments for mobile devices */
 }
